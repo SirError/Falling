@@ -30,7 +30,7 @@ Painel.prototype = {
       ctx.save();
       ctx.fillStyle = 'white';
       ctx.font = '18px sans-serif';
-      ctx.fillText(this.pontuacao, 100, 27);
+      ctx.fillText(xCiclos, 100, 27);
       ctx.restore();   
    }
 }
