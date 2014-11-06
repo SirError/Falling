@@ -39,17 +39,17 @@ Nave.prototype = {
          this.spritesheet.linha = 2;
       else
          this.spritesheet.linha = 0;      
-      if (this.x > 450) this.x = 450;
+      if (this.x > 450) this.x = 464;
 	  if (this.y > 450) this.y = 450;
-	  if (this.x <= 0) this.x = 48;
-	  if (this.y <= 0) this.y = 45;
+	  if (this.x <= 0) this.x = 0;
+	  if (this.y <= 0) this.y = 0;
       this.spritesheet.desenhar(this.x, this.y);
       this.spritesheet.proximoQuadro();
    },
    atirar: function() {
-      var t = new Tiro(this.context, this);
-      this.animacao.novoSprite(t);
-      this.colisor.novoSprite(t);
+     // var t = new Tiro(this.context, this);
+     // this.animacao.novoSprite(t);
+     // this.colisor.novoSprite(t);
    },
    retangulosColisao: function() {
       // Estes valores vão sendo ajustados aos poucos
